@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Карта офиса</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=62a6df6a-e3f9-47a3-ab64-e8dc4a5bac89&lang=ru_RU"
+        type="text/javascript"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .offices-block {
+        display: flex;
+        margin: 50px 0;
+        max-width: 900px;
+        width: -webkit-fill-available;
+    }
+
+    .full-width-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .offices-block__map {
+        width: 500px;
+        height: 400px;
+        border-radius: 20px;
+    }
+    .offices-block__info-container {
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Об офисах Компании N</h1>
+
+        <div class="full-width-container">
+            <div class="offices-block">
+                <div id="map" class="offices-block__map"></div>
+                <div class="offices-block__info-container">
+                    <div class="offices-block__info">
+                        <h2>Офис в Москве</h2>
+                        <p>Адрес: г. Москва, ул. Пушкина, д. 5</p>
+                        <p>Телефон: +7 (495) 123-45-67</p>
+                    </div>
+                    <div class="offices-block__info">
+                        <h2>Офис в Москве 2</h2>
+                        <p>Адрес: г. Москве, ул. Ленина, д. 10</p>
+                        <p>Телефон: +7 (812) 765-43-21</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
